@@ -1,0 +1,10 @@
+
+.contenedor-hero {
+        background-image: url('../../assets/img/banners-sillon.png'); /* Ruta de tu imagen de fondo */
+        background-size: cover; /* Ajustar la imagen para cubrir todo el div */
+        background-position: center; /* Posición de la imagen */
+        /* Otros estilos opcionales */
+        padding: 50px; /* Espacio alrededor del contenido */
+        color: white; /* Color del texto dentro del div */
+        text-align: center; /* Alineación del texto dentro del div */
+      }

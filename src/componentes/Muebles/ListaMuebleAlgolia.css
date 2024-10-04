@@ -1,0 +1,246 @@
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+ 
+  overflow-y: auto;
+}
+
+
+.ais-ClearRefinements-button:hover{
+  color: #ed5565;
+  font-size: 18px;
+}
+
+.ais-Highlight-highlighted {
+  background-color: hotpink;
+}
+
+.ais-Hits-container {
+  display: grid;
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.results-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toolbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.toolbar li {
+  margin-left: 15px;
+  border: solid 1px black;
+  padding: 10px;
+}
+
+.toolbar .ais-Pagination-item--selected {
+  background-color: #0096db;
+  border: solid 1px #0096db;
+}
+
+.toolbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.ais-Pagination-item--selected a {
+  color: white;
+}
+
+.ais-RefinementList-count {
+  display: none;
+}
+
+
+/* Custom Search  */
+.search-container {
+  position: relative;
+  display: inline-grid;
+  grid-gap: 1em;
+  margin: 40px;
+}
+
+.search-container input {
+  transition: 0.3s;
+}
+
+.search-container .hits-container {
+  max-height: 80vh;
+  overflow: scroll;
+  z-index: 2;
+  /* position: absolute; */
+  right: 0;
+  top: calc(100% + 0.5em);
+  width: 80vw;
+  max-width: 30em;
+  box-shadow: 0 0 5px 0 black;
+  padding: 0.7em 1em 0.4em;
+  border-radius: 0.2em;
+  background-color: white;
+}
+
+.search-container .stats {
+  justify-self: end;
+
+}
+
+.search-container .hit img {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.search-container .hit {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.search-container .hit-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+.ais-PoweredBy {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.ais-Hits-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  grid-gap: 20px; /* Espacio entre los ítems */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.ais-Hits-item{
+  width: 300px;
+  height: 300px;
+}
+.products-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+
+
+/* REFINEMENT LIST */
+.ais-RefinementList {
+  margin-bottom: 24px;
+}
+
+.ais-RefinementList-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ais-RefinementList-item {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.ais-RefinementList-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.ais-RefinementList-checkbox {
+  margin-right: 8px;
+  cursor: pointer;
+  accent-color: #ed5565; /* For modern browsers */
+}
+
+.ais-RefinementList-count {
+  font-size: 12px;
+  color: #999;
+  margin-left: auto;
+}
+
+.ais-RefinementList-item--selected .ais-RefinementList-label {
+  font-weight: bold;
+  color: #ed5565; /* Color for selected items */
+}
+
+.ais-RefinementList-item:hover .ais-RefinementList-label {
+  color: #ed5565; /* Hover effect for items */
+}
+
+/* SEARCH BOX FORM */
+.ais-SearchBox-form {
+  display: flex;
+  align-items: center;
+  margin: 20px 0; /* Espaciado superior e inferior */
+  border: 2px solid #ddd; /* Borde alrededor del formulario */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px 10px; /* Espaciado interno */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.ais-SearchBox-input {
+  flex: 1; /* Ocupa el espacio disponible */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: 300; /* Peso de la fuente */
+  border: none; /* Sin borde por defecto */
+  padding: 10px; /* Espaciado interno */
+  outline: none; /* Sin contorno */
+}
+
+.ais-SearchBox-input:focus {
+  border-bottom: 2px solid #1f2937; /* Línea inferior en foco */
+  transition: border-color .3s ease-in; /* Transición suave */
+}
+
+.ais-SearchBox-reset {
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  color: #ed5565; /* Color del icono */
+  margin-left: 10px; /* Espaciado a la izquierda */
+}
+
+.ais-SearchBox-submit {
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  transition: background-color .3s ease; /* Transición suave en fondo */
+}
+
+.ais-SearchBoxsubmit:hover {
+  background-color: #1f2937; /* Cambio de color al pasar el mouse */
+}
+

@@ -1,0 +1,31 @@
+.contenedor-topBar{
+    width: 100vw;
+    min-height: 30px;
+    background-color:white;
+    display: flex;
+    justify-content:space-between;
+    border-bottom: solid #e5e7eb;
+    border-bottom-width: 1px;
+
+}
+
+.cont-caja1-topBar{
+    width: 500px;
+    color:#1f2937;
+
+}
+
+.cont-caja2-topBar{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-caja2-topBar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color:#1f2937;
+  
+}
+
